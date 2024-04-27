@@ -6,6 +6,8 @@
 }
 
 
+
+
 body {
     background-image: url(./assets/background-img.jpg);
     background-repeat: no-repeat;
@@ -15,13 +17,13 @@ body {
 
 
 header {
-    background-color: #001a65;
+    background-color: #000000;
     padding: 25px;
 }
 
 h1 {
     text-align: center;
-    color: #a9e4ee;
+    color: #ffffff;
 
 }
 
@@ -49,7 +51,7 @@ button {
 }
 
 
-.dc {
+.dc-img {
     width: 70px;
 }
 

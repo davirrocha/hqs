@@ -1,5 +1,5 @@
 let list = document.querySelector("ul")
-
+let mainColor = document.querySelector("main")
 
 let myList = ''
 menuOptins.forEach(item => {
@@ -36,15 +36,28 @@ function marvelList() {
     const marvelFilter = menuOptins.filter(comicsMarvel => comicsMarvel.publishingHouse === "marvel"
     )
     allList(marvelFilter);
-        list.style.borderColor = "#FF0000"
+    mainColor.style.borderColor = "#FF0000"
 }
 
 function dcList() {
     const dcFilter = menuOptins.filter(comicsDc => comicsDc.publishingHouse === "dc"
     )
-    allList(dcFilter);
-        list.style.borderColor = "#001a65"
+    allList(dcFilter)
+    mainColor.style.borderColor = "#001a65"
 }
+
+
+const changeComics = document.querySelector(".select-chacter")
+console.log(changeComics)
+
+const filter = menuOptins.filter(items => items.codigo === 103
+
+
+)
+
+console.log(filter)
+
+
 
 
 const filterMarvel = document.querySelector(".marvel")
@@ -52,5 +65,3 @@ filterMarvel.addEventListener('click', marvelList)
 const filterDc = document.querySelector(".dc")
 filterDc.addEventListener('click', dcList)
 allList()
-
-
