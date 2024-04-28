@@ -151,5 +151,12 @@ img {
         height: 26vh;
     }
 
+    p {
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+        width: 261px;
+        margin-top: 26px;
+    }
 
 }
