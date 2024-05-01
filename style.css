@@ -28,10 +28,6 @@ h1 {
 }
 
 
-nav {
-    margin: 50px 0;
-}
-
 section {
     margin: 0 0 25px;
     display: flex;
@@ -50,6 +46,7 @@ button {
 select {
     position: absolute;
     right: 66px;
+    outline: 0;
 }
 
 
@@ -71,6 +68,8 @@ main {
     padding: 36px;
     border: 3px solid #ffffff;
     border-radius: 25px;
+    margin-top: 100px;
+
 }
 
 ul {
@@ -115,15 +114,34 @@ img {
 
     }
 
+    header {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: #000000;
+    }
+
 
     main {
+        position: relative;
         width: 100%;
         background-color: transparent;
         padding: 0;
         border: none;
         border-radius: 0;
+        background-color: #000000;
+        margin-top: 10px;
+        border-radius: 15px;
     }
 
+    section {
+        position: relative;
+        top: 15px;
+    }
 
     .marvel-img {
         margin-left: 10px
@@ -132,6 +150,7 @@ img {
 
     select {
         right: 10px;
+        outline: 0;
     }
 
 
