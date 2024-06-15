@@ -1,7 +1,7 @@
 let list = document.querySelector("ul")
 let mainColor = document.querySelector("main")
-
 let myList = ''
+
 menuOptins.forEach(item => {
     myList += `
         <li>
