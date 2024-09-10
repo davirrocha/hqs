@@ -1,6 +1,10 @@
 let list = document.querySelector("ul")
-let mainColor = document.querySelector("main")
 let myList = ''
+const btnReload = document.querySelector('#reload')
+
+btnReload.addEventListener('click', () => {
+    location.reload()
+})
 
 menuOptins.forEach(item => {
     myList += `
@@ -24,28 +28,14 @@ function allList(comics) {
             </li>
      `
         list.innerHTML = myList
-
-
     })
 }
 
 
-function marvelList() {
-    const marvelFilter = menuOptins.filter(comicsMarvel => comicsMarvel.publishingHouse === "marvel"
-    )
-    allList(marvelFilter);
-    mainColor.style.borderColor = "#FF0000"
-}
-
-function dcList() {
-    const dcFilter = menuOptins.filter(comicsDc => comicsDc.publishingHouse === "dc"
-    )
-    allList(dcFilter)
-    mainColor.style.borderColor = "#001a65"
-}
-
 
 const changeComics = document.querySelector(".select-chacter");
+
+
 
 function filter() {
 
@@ -55,6 +45,7 @@ function filter() {
     const xmen = menuOptins.filter(item => item.codigo === 105 && changeComics.value === "105")
     const iron = menuOptins.filter(item => item.codigo === 106 && changeComics.value === "106")
     const superman = menuOptins.filter(item => item.codigo === 104 && changeComics.value === "104")
+
     allList(batman)
     allList(flash)
     allList(spider)
@@ -62,6 +53,21 @@ function filter() {
     allList(superman)
     allList(iron)
 }
+
+const marvelFilter = document.querySelector('#marvel')
+
+marvelFilter.addEventListener('click', () => {
+    const marvel = menuOptins.filter(item => item.publishingHouse === "marvel")
+    allList(marvel)
+})
+
+const dcFilter = document.querySelector('#dc')
+
+dcFilter.addEventListener('click', () => {
+    const dcComics = menuOptins.filter(item => item.publishingHouse === "dc")
+    allList(dcComics)
+})
+
 
 
 
@@ -71,8 +77,6 @@ function filter() {
 
 
 changeComics.addEventListener("change", filter)
-const filterMarvel = document.querySelector(".marvel")
-filterMarvel.addEventListener('click', marvelList)
-const filterDc = document.querySelector(".dc")
-filterDc.addEventListener('click', dcList)
+
+
 allList()
