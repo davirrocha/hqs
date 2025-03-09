@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px 4%;
-    background-color: #060606;
+    background-color: #000000;
 
     div {
         display: flex;
@@ -126,7 +126,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #060606;
+    background-color: #000000;
     color: #DB3F4A;
     font-size: 20px
 }

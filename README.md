@@ -1,5 +1,19 @@
-<h1>Projeto de HQ's. Utilizando HTML, CSS e JS</h1> <h3> 
+# Projeto HQ's
+![Design da pagina](./assets/design-page.png)
+Este é um projeto web para listar e filtrar HQ's de diferentes editoras, como Marvel e DC. Ele permite que os usuários visualizem uma lista de HQs disponíveis, filtrem por personagens específicos e naveguem entre as opções de editoras. **[Link do projeto](https://davirrocha.github.io/hqs/)**
 
-<img width="480em" src ="https://i.pinimg.com/736x/3d/26/de/3d26decce88a2ee90e96437989c37ce3.jpg">
+## Tecnologias Utilizadas
 
-<i><a href="https://davirrocha.github.io/HQ-s/">LINK PARA O SITE!!</a></i>
+- HTML
+
+- CSS
+
+- JavaScript
+
+## Funcionalidades
+
+- Listagem de HQs
+
+- Filtragem por personagem
+
+- Filtragem por editora (Marvel e DC)
